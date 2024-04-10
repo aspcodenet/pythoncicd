@@ -30,6 +30,11 @@ jobs:
         run: |
           pip install -r requirements.txt
           python csvtojson.py
+      - name: Run tests
+        run: |
+          pip install -r requirements.txt
+          python tests.py
+
       - name: List files in the repository3
         run: |
           ls ${{ github.workspace }}
